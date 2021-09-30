@@ -1,0 +1,134 @@
+.text-tream li::before{
+   
+        /* content:url(li.png); */
+       
+      
+ }
+  
+ .text-tream li{
+     list-style: url(li.png);
+    
+     /* list-style: none; */
+     list-style-position:inside
+ }
+
+::-webkit-scrollbar{
+     width: 4px;
+    
+ }
+
+ ::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to bottom, rgba(117, 195, 224, 0.8), rgba(0, 38, 255, 0.445));
+     border-radius: 2rem;
+ }
+
+ .comments{
+     background-color: rgba(233, 232, 232, 0.692);
+     width:1190px ;
+     /* height: 500px; */
+     margin-left: 9.5rem;
+     margin-top: 1.5rem;
+    
+     padding: 1rem 0rem 1rem 1rem;  
+     box-shadow: 18px 18px 30px #d1d9e6;
+     border-radius: 0.8rem;
+    }   
+ 
+
+ #comments-padding{
+     margin-top: 10px;
+    padding: 10px 0 0 0;  
+     margin-left: 0.7rem;
+    width: 1150px;
+     background-color: white;
+     box-shadow: 18px 18px 30px #d1d9e6;
+     border-radius: 0.8rem;
+ }
+
+ /* 评论按钮 */
+ .submit{
+     border-style: none;
+     height: 2rem;
+     color: white;
+     width: 5rem;
+     border-radius: 0.5rem;
+     background-image: linear-gradient(to right, rgba(117, 195, 224, 0.8), rgba(0, 38, 255, 0.445));
+
+ }
+
+ /* 针对表单进行布局尝试 */
+ .comments-3-text{
+     display: flex;
+     /* margin: 0 15%; */
+ }
+
+ /* 评论区标题 */
+ #response{
+     text-align: center;
+     font-weight: 600;
+     font-size: 20px;
+     height: 3rem;
+     border-style: solid;
+     border-right: none;
+     border-top: none;
+     border-left: none;
+     border-width: 1px;
+     border-color: rgb(158, 158, 153);
+     
+ }
+
+ .comments-3-text .text{
+     border-radius: 0.5rem;
+     height: 2rem;
+     width: 10rem;
+     border-style: none;
+    
+     background-color: rgb(237, 237, 238);
+     
+ }
+ .comments-3-text p{
+     margin-left: 6.5rem;
+     font-weight: 600;
+ }
+ 
+ .comments-3-text .text:hover{
+     border-style: none;
+     background-color: rgb(238, 233, 225);
+ }
+
+ .talk-content .text{
+     padding: 2px 10px 2px 10px;
+     font-size: 1rem;
+     border-style: none !important;
+     background-color: rgb(237, 237, 238);
+     margin-left: 6%;
+     height: 13rem;
+     width: 1000px;
+     border-radius: 0.7rem;
+ }
+
+ .submit{
+     position: relative;left: 990px;
+     margin-bottom: 10px;
+ }
+
+ .talk-content .text:hover{
+     border-style: none;
+     background-color: rgb(238, 233, 225);
+ }
+
+ .talk-content .text:active{
+    border-style: none;
+    background-color: rgb(238, 233, 225);
+}
+
+/* 单独对文本框限制边框属性 */
+input{outline: none;}
+textarea{outline: none;}
+
+/* 对评论列表增加样式 */
+
+#comment_list{
+    display: flex; 
+   flex-wrap: wrap;
+}
